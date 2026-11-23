@@ -1,0 +1,113 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TechNova | Electronics Store</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+     <!-- Navigation bar-->
+      
+    <header class="navbar">
+        <a href="#" class="logo">Tech<span>Nova.</span></a>
+
+        <nav>
+            <a href="#">Home</a>
+            <a href="#products">Products</a>
+            <a href="#footer">About</a>
+        </nav>
+
+        <div class="cart">
+            <span>🛒</span>
+            <span id="cart-count">0</span>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+
+    <section class="hero">
+        <div class="hero-content">
+            <p class="tagline">TECHNOLOGY FOR EVERYDAY LIFE</p>
+            <h1>Upgrade Your<br>Digital Lifestyle.</h1>
+            <p>
+                Discover the latest gadgets, smart devices,
+                and electronics at amazing prices.
+            </p>
+            <a href="#products" class="shop-btn">Shop Now</a>
+        </div>
+    </section>
+
+    <!-- Products Section -->
+    <section class="products-section" id="products">
+
+        <div class="section-heading">
+            <p class="tagline">OUR COLLECTION</p>
+            <h2>Explore Our Products</h2>
+        </div>
+
+        <!-- Search and Sorting -->
+        <div class="controls">
+            <input
+                type="text"
+                id="search-input"
+                placeholder="Search products..."
+            >
+
+            <select id="sort-select">
+                <option value="default">Sort by Price</option>
+                <option value="low">Low to High</option>
+                <option value="high">High to Low</option>
+            </select>
+        </div>
+
+        <!-- Category Buttons -->
+        <div class="categories">
+            <button class="filter-btn active" data-category="All">
+                All
+            </button>
+
+            <button class="filter-btn" data-category="Smartphones">
+                Smartphones
+            </button>
+
+            <button class="filter-btn" data-category="Audio">
+                Audio
+            </button>
+
+            <button class="filter-btn" data-category="Accessories">
+                Accessories
+            </button>
+        </div>
+
+        <!-- Product Grid -->
+        <div class="product-grid" id="product-grid">
+        </div>
+
+    </section>
+
+    <!-- Footer -->
+    <footer id="footer">
+        <h2>TechNova.</h2>
+        <p>Your destination for modern electronics.</p>
+
+        <div class="social-links">
+            <a href="https://www.facebook.com/" target="_blank">Facebook</a>
+            <a href="https://www.instagram.com/" target="_blank">Instagram</a>
+            <a href="https://www.linkedin.com/" target="_blank">LinkedIn</a>
+        </div>
+
+        <p class="copyright">
+            &copy; 2026 TechNova. All rights reserved.
+        </p>
+    </footer>
+
+    <!-- Notification -->
+    <div id="notification" class="notification">
+        Product added to cart!
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
